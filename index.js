@@ -106,13 +106,13 @@ function oyun(oyuncu, bilgisayar) {
     if (bilgisayar === "Makas") {
       return "Kazandın!";
     } else {
-      return "Kaybettin";
+      return "Kaybettin!";
     }
   } else if (oyuncu === "Makas") {
     if (bilgisayar === "Kağıt") {
       return "Kazandın!";
     } else {
-      return "Kaybettin";
+      return "Kaybettin!";
     }
   } else if (oyuncu === "Kağıt") {
     if (bilgisayar === "Taş") {
@@ -193,9 +193,12 @@ Aşağıdakileri cocukSarkisi fonksiyonunda yap:
 */
 
 function cocukSarkisi(sayi) {
-  /* return ( sayi + "küçük maymun yatakta zıplamış, biri düşüp başını çarpmış, Anne doktoru aramış, Doktor çok kızmış: Bir daha yatakta zıplamak yok!"); */
+  return (
+    sayi +
+    "küçük maymun yatakta zıplamış, biri düşüp başını çarpmış, Anne doktoru aramış, Doktor çok kızmış: Bir daha yatakta zıplamak yok!"
+  );
 
-  return `${sayi} küçük maymun yatakta zıplamış, biri düşüp başını çarpmış, Anne doktoru aramış, Doktor çok kızmış: Bir daha yatakta zıplamak yok`;
+  /*return `${sayi} küçük maymun yatakta zıplamış, biri düşüp başını çarpmış, Anne doktoru aramış, Doktor çok kızmış: Bir daha yatakta zıplamak yok`;*/
 }
 for (let i = 5; i > 0; i--) {
   console.log("Görev 5 cocukSarkisi", cocukSarkisi(i));
