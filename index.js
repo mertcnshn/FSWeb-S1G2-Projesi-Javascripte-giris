@@ -109,18 +109,15 @@ function oyun(oyuncu, bilgisayar) {
       return "Kaybettin";
     }
   } else if (oyuncu === "Makas") {
-    if (bilgisayar === "Kağıt"){
+    if (bilgisayar === "Kağıt") {
       return "Kazandın!";
-    }
-    else {
+    } else {
       return "Kaybettin";
     }
-  }
-  else if (oyuncu === "Kağıt") {
-    if(bilgisayar=== "Taş"{
+  } else if (oyuncu === "Kağıt") {
+    if (bilgisayar === "Taş") {
       return "Kazandın!";
-    })
-    else {
+    } else {
       return "Kaybettin!";
     }
   }
